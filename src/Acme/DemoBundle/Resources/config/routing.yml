@@ -5,3 +5,4 @@ _welcome:
 test:
     prefix:   /test
     resource: "@AcmeDemoBundle/Resources/config/test.yml"
+
