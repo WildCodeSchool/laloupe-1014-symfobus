@@ -6,12 +6,13 @@
 header
 {
   text-align: center;
+  color: white;
   margin-bottom: 20px;
-}
-
-#intro
-{
-  background-color: red;
+  margin-top: 20px;
+  padding-top:5px;
+  padding-bottom: 10px;
+  background-color: #213F41;
+  box-shadow: 5px 5px;
 }
 
 h4
