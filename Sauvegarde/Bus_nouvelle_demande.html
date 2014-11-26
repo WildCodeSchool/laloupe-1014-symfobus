@@ -38,7 +38,7 @@
           <h5><strong>Représentant légal</strong></h5>
           <form method="post" action="traitement.php">
             <p>
-              <label for="civilite">Civilité : </label>
+              <label for="civilite">Civilité </label>
               <select name="civilite">
                 <option value="Madame">Madame</option>
                 <option value="Mademoiselle">Mademoiselle</option>
@@ -46,16 +46,16 @@
               </select>
             </p>
             <p>
-              <label for="nom">Nom :</label>
+              <label for="nom">Nom </label>
               <input type="text" name="nom" id="nom" placeholder="Ex : nom" size="30" maxlength="10" />
             </p>
             <p>
-              <label for="prénom">Prénom :</label>
+              <label for="prénom">Prénom </label>
               <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
             </p>
 
             <p>
-              <label for="numero">Numéro/Adresse</label>  
+              <label for="numero">Numéro/Adresse </label>  
               <input type="text" name="tuteur_adresse_numero" id="tuteur_adresse_numero" placeholder= size="4" maxlength="4" />
               <select id="tuteur_adresse_libelle_bis" size="1" name="tuteur_adresse_libelle_bis">
               <option value="" selected="selected"></option>
@@ -66,78 +66,88 @@
             </p>
 
             <p>
-              <label for="compadresse">Complément d'adresse :</label>
-              <input type="text" name="compadresse" id="compadresse" placeholder="Ex : Complément d'adresse" size="30" maxlength="10" />
+              <label for="compadresse">Complément d'adresse </label>
+              <input type="text" name="compadresse" id="compadresse" size="30" maxlength="10" />
+            </p>
+             <p>
+              <label for="codepostal">Code postal/Commune </label>
+              <input type="text" name="codepostal" id="codepostal" size="30" maxlength="10" />
             </p>
             <p>
-            Code postal/commune
             Téléphone
-            Courriel
             </p>
-<form method="post" action="traitement.php">
+             <p>
+              <label for="mail">Courrier </label>
+              <input type="text" name="mail" id="mail" size="30" maxlength="10" />
+            </p
+            <h5><strong>Scolarité</strong></h5>
+            <form method="post" action="traitement.php">
             <p>
-              <label for="etablissement">Commune de votre établissement</label>
+              <label for="etablissement">Commune de votre établissement </label>
               <select name="etablissement">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez choisir la commune de l'établissement</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
             <form method="post" action="traitement.php">
             <p>
-              <label for="civilite">Etablissement</label>
+              <label for="civilite">Etablissement </label>
               <select name="civilite">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez choisir une commune</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
             <form method="post" action="traitement.php">
             <p>
-              <label for="regime">Régime</label>
+              <label for="regime">Régime </label>
               <select name="regime">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez sélectionner un établissement</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
             <form method="post" action="traitement.php">
             <p>
-              <label for="classe">Classe</label>
+              <label for="classe">Classe </label>
               <select name="classe">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez sélectionner un établissement</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
             <form method="post" action="traitement.php">
             <p>
-              <label for="autre_classe">Autre classe</label>
+              <label for="autre_classe">Autre classe </label>
               <select name="autre_classe">
                 <option value="#">Madame</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
+            <h5><strong>Mode de transport </strong></h5>
             <form method="post" action="traitement.php">
             <p>
-              <label for="commontee">Commune de votre point de montée</label>
+              <label for="commontee">Commune de votre point de montée </label>
               <select name="commontee">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez choisir la commune de montée</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
             </p>
             <form method="post" action="traitement.php">
             <p>
-              <label for="montee">Point de montée</label>
+              <label for="montee">Point de montée </label>
               <select name="montee">
-                <option value="#">Madame</option>
+                <option value="#">Veuillez choisir une commune</option>
                 <option value="#">Mademoiselle</option>
                 <option value="#">Monsieur</option>
               </select>
+              <p>J'atteste l'exactitude des renseignements portés ci-dessus.
+                Je m'engage à respecter le règlement interne des transports scolaires notamment en matière de sécurité et de discipline.</p>
             </p>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Continuer</button>
             <br>
             <br>
           </form>
