@@ -1,11 +1,17 @@
 .body
 {
-  background-color: #FFE3B0;
+  background-color: #EAD390;
 }
 
 header
 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+#intro
+{
+  background-color: red;
 }
 
 h4
@@ -23,7 +29,7 @@ h4
 
 #newask
 {
-  background-color: #FF6C6B;
+  background-color: #7ACAD1;
   border-radius: 20px;
   border: solid white;
   margin-right: 5px;
