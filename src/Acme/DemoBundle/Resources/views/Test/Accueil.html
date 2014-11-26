@@ -1,10 +1,19 @@
-{% extends "AcmeDemoBundle::layout.html.twig" %}
-
-{% block title "Symfony - Demos" %}
-
-{% block content_header '' %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <title>Accueil</title>
+   <meta charset ="utf-8" />
+   <link rel="stylesheet" type="text/css" href="bus.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Liaisons aux fichiers de Bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
+  <link rel="stylesheet" type="text/css" href="nouvelle_demande.css" >
+   <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries --> 
+   <!--[if lt IE 9]> 
+   <script src="assets/js/html5shiv.js"></script> 
+   <script src="assets/js/respond.min.js"></script> 
+   <![endif]--> 
+  </head>
 
   <body class="body">
     <div classe="container">
@@ -72,4 +81,9 @@
         </div>
       </div>
     </div>
-{% endblock %}
+
+  <!-- Les liaisons aux scripts --> 
+  <script src="assets/js/jquery.js" type="text/javascript"></script> 
+  <script src="dist/js/bootstrap.min.js" type="text/javascript"></script>
+  </body>
+  </html>
