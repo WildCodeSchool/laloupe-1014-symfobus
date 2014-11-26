@@ -8,6 +8,51 @@
     <h1 class="title">Available demos</h1>
     <ul id="demo-list">
         <li><a href="{{ path('_demo_hello', {'name': 'World'}) }}">Hello World</a></li>
+        <form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">email@example.com</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+</form>
+
+
+
+    <div class="btn-group">
+
+        <button type="button" class="btn btn-primary">Button</button>
+
+        <button type="button" class="btn btn-primary">Another Button</button>
+
+        <div class="btn-group">
+
+            <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Dropdown <span class="caret"></span></button>
+
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Action</a></li>
+
+                <li><a href="#">Another action</a></li>
+
+                <li class="divider"></li>
+
+                <li><a href="#">Separated link</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
         <li><a href="{{ path('_demo_secured_hello', {'name': 'World'}) }}">Access the secured area</a> <a href="{{ path('_demo_login') }}">Go to the login page</a></li>
         {# <li><a href="{{ path('_demo_contact') }}">Send a Message</a></li> #}
     </ul>

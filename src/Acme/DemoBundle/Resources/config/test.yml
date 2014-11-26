@@ -1,0 +1,3 @@
+test_index:
+    path: index
+    defaults: { _controller: AcmeDemoBundle:Test:index }
