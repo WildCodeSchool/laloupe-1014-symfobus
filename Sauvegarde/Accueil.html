@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <title>Accueil</title>
+   <meta charset ="utf-8" />
+   <link rel="stylesheet" type="text/css" href="bus.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Liaisons aux fichiers de Bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">  
+  <link rel="stylesheet" type="text/css" href="nouvelle_demande.css" >
+   <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries --> 
+   <!--[if lt IE 9]> 
+   <script src="assets/js/html5shiv.js"></script> 
+   <script src="assets/js/respond.min.js"></script> 
+   <![endif]--> 
+  </head>
+
+  <body>
+    <div classe="container">
+
+      <div classe="row">
+
+        <header class="col-md-12"> 
+         <h2>INSCRIPTION AUX TRANSPORTS SCOLAIRES</h2> 
+        </header>
+
+        <div class="col-md-12">  
+          <p>Vous inscrivez votre ou vos enfants pour la première fois, cliquez sur NOUVELLE DEMANDE ci-dessous.</p><br>
+          <p>Votre ou vos enfants possèdent déjà une carte de transport de la Communauté de Commune, cliquez sur JE M'IDENTIFIE ci-dessous.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <h4>NOUVELLE DEMANDE ANNEE SCOLAIRE 2014-2015</h4>
+            <br>
+            <p>Merci de saisir le nom, le prénom et la date de naissance de votre enfant : </p>
+
+            <form method="post" action="traitement.php">
+              <p>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Ex : Nom" size="30" maxlength="10" value="<?php echo $name;?>"/>
+              </p>
+              <p>
+                <label for="prénom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
+              </p>
+              <p>
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
+              </p>
+
+                <input type="submit" value="Valider">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div> 
+      
+          <form role="form" class="col-md-4"> 
+            <h4>JE M'IDENTIFIE</h4>
+            <div class="form-group"> 
+              <label for="lemail">Adresse mail</label> 
+              <input type="email" class="form-control" id="lemail" placeholder="indiquez votre adresse mail"> 
+            </div>
+
+            <div class="form-group"> 
+              <label for="pw">Mot de passe</label> 
+              <input type="password" class="form-control" id="pw" placeholder="Indiquez votre mot de passe"> 
+            </div> 
+
+            <div class="checkbox"> 
+              <label> 
+                <input type="checkbox"> Accepter les conditions 
+              </label> 
+            </div>
+
+            <button type="submit" class="btn btn-default">Envoyer</button> 
+            <h6>Mot de passe / identifiant perdu ou oublié, cliquez ici.</h6>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <!-- Les liaisons aux scripts --> 
+  <script src="assets/js/jquery.js" type="text/javascript"></script> 
+  <script src="dist/js/bootstrap.min.js" type="text/javascript"></script>
+  </body>
+  </html>
