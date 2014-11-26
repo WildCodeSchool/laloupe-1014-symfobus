@@ -15,7 +15,7 @@
    <![endif]--> 
   </head>
 
-  <body>
+  <body class="body">
     <div classe="container">
 
       <div classe="row">
@@ -30,35 +30,42 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-md-offset-2">
-            <h4>NOUVELLE DEMANDE ANNEE SCOLAIRE 2014-2015</h4>
-            <br>
-            <p>Merci de saisir le nom, le prénom et la date de naissance de votre enfant : </p>
-
-            <form method="post" action="traitement.php">
+          
+            
+            <!--<form method="post" action="traitement.php">
               <p>
-                <label for="nom">Nom :</label>
+                <label for="nom">Nom</label>
                 <input type="text" name="nom" id="nom" placeholder="Ex : Nom" size="30" maxlength="10" value="<?php echo $name;?>"/>
-              </p>
-              <p>
-                <label for="prénom">Prénom :</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
-              </p>
-              <p>
-                <label for="naissance">Date de naissance :</label>
-                <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
-              </p>
-
-                <input type="submit" value="Valider">
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+              </p>-->
+              
           </div> 
-      
-          <form role="form" class="col-md-4"> 
+          
+          <form role="form" class="col-md-4 col-md-offset-2" id="newask">
+          <h4>NOUVELLE DEMANDE<br> ANNEE SCOLAIRE 2014-2015</h4>
+            <br>
+            <p>Merci de saisir le nom, le prénom et la date de naissance de votre enfant : </p> 
+    
+            <div class="form-group"> 
+              <label for="nom">Nom</label> 
+              <input type="text" class="form-control" id="nom" placeholder="Indiquez le nom de votre enfant"> 
+            </div>
+
+            <div class="form-group"> 
+              <label for="prenom">Prénom</label> 
+              <input type="text" class="form-control" id="prenom" placeholder="Indiquez le prénom de votre enfant"> 
+            </div>
+            <div class="form-group"> 
+              <label for="date">Date de naissance</label> 
+              <input type="date" class="form-control" id="date" placeholder="Indiquez la date de naissance de votre enfant"> 
+            </div> 
+            <button type="submit" class="btn btn-default">Envoyer</button>             
+          </form>
+
+          <form role="form" class="col-md-4" id="connexion"> 
             <h4>JE M'IDENTIFIE</h4>
             <div class="form-group"> 
               <label for="lemail">Adresse mail</label> 
-              <input type="email" class="form-control" id="lemail" placeholder="indiquez votre adresse mail"> 
+              <input type="email" class="form-control" id="lemail" placeholder="Indiquez votre adresse mail"> 
             </div>
 
             <div class="form-group"> 
@@ -66,14 +73,8 @@
               <input type="password" class="form-control" id="pw" placeholder="Indiquez votre mot de passe"> 
             </div> 
 
-            <div class="checkbox"> 
-              <label> 
-                <input type="checkbox"> Accepter les conditions 
-              </label> 
-            </div>
-
             <button type="submit" class="btn btn-default">Envoyer</button> 
-            <h6>Mot de passe / identifiant perdu ou oublié, cliquez ici.</h6>
+            <h6>Mot de passe / identifiant perdu ou oublié, <a href="#">cliquez ici.</a></h6>
           </form>
         </div>
       </div>

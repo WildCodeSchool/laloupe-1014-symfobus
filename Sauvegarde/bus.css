@@ -1,4 +1,30 @@
+.body
+{
+  background-color: #FFE3B0;
+}
+
 header
 {
   text-align: center;
+}
+
+h4
+{
+  text-align: center;
+}
+
+#connexion
+{
+  background-color: #1FD682;
+  border-radius: 20px;
+  border: solid white;
+  margin-left: 5px;
+}
+
+#newask
+{
+  background-color: #FF6C6B;
+  border-radius: 20px;
+  border: solid white;
+  margin-right: 5px;
 }
