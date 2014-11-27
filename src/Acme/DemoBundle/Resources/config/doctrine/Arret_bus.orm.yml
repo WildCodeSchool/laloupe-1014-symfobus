@@ -1,0 +1,22 @@
+Acme\DemoBundle\Entity\Arret_bus:
+    type: entity
+    table: null
+    repositoryClass: Acme\DemoBundle\Entity\Arret_busRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        date:
+            type: datetime
+        title:
+            type: string
+            length: '255'
+        author:
+            type: string
+            length: '255'
+        content:
+            type: text
+    lifecycleCallbacks: {  }
