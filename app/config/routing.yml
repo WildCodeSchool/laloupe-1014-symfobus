@@ -1,0 +1,4 @@
+simplon_v_bus:
+    resource: "@SimplonVBusBundle/Resources/config/routing.yml"
+    prefix:   /
+

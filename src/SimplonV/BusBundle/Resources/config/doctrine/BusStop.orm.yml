@@ -1,0 +1,19 @@
+SimplonV\BusBundle\Entity\BusStop:
+    type: entity
+    table: null
+    repositoryClass: SimplonV\BusBundle\Entity\BusStopRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        latitude:
+            type: float
+        longitude:
+            type: float
+    lifecycleCallbacks: {  }

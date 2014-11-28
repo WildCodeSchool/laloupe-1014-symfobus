@@ -1,0 +1,7 @@
+simplon_v_bus_busstop:
+    resource: "@SimplonVBusBundle/Resources/config/routing/busstop.yml"
+    prefix:   /busstop
+
+simplon_v_bus_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SimplonVBusBundle:Default:index }

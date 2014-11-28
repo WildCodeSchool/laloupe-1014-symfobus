@@ -1,0 +1,30 @@
+busstop:
+    path:     /
+    defaults: { _controller: "SimplonVBusBundle:BusStop:index" }
+
+busstop_show:
+    path:     /{id}/show
+    defaults: { _controller: "SimplonVBusBundle:BusStop:show" }
+
+busstop_new:
+    path:     /new
+    defaults: { _controller: "SimplonVBusBundle:BusStop:new" }
+
+busstop_create:
+    path:     /create
+    defaults: { _controller: "SimplonVBusBundle:BusStop:create" }
+    requirements: { _method: post }
+
+busstop_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SimplonVBusBundle:BusStop:edit" }
+
+busstop_update:
+    path:     /{id}/update
+    defaults: { _controller: "SimplonVBusBundle:BusStop:update" }
+    requirements: { _method: post|put }
+
+busstop_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SimplonVBusBundle:BusStop:delete" }
+    requirements: { _method: post|delete }
