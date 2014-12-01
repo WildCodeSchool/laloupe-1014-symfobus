@@ -2,6 +2,10 @@ simplon_v_bus_busstop:
     resource: "@SimplonVBusBundle/Resources/config/routing/busstop.yml"
     prefix:   /busstop
 
+simplon_v_bus_inscription:
+     resource: "@SimplonVBusBundle/Resources/config/routing/inscription.yml"
+     prefix:   /inscription
+
 simplon_v_bus_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: SimplonVBusBundle:Default:index }

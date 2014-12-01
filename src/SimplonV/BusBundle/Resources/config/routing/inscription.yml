@@ -1,0 +1,3 @@
+busstop:
+    path:     /
+    defaults: { _controller: "SimplonVBusBundle:Inscription:index" }

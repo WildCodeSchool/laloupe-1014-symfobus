@@ -1,0 +1,74 @@
+{% extends "SimplonVBusBundle::base.html.twig" %}
+
+{% block content %}
+<h1>NOUVELLE DEMANDE ANNEE SCOLAIRE 2014-2015</h1>
+
+    <h2>Elève</h2>
+    <p>Nom lien PHP appelant le Nom</p>
+    <p>Nom lien PHP appelant le Prénom</p>
+    <p>Nom lien PHP appelant la date de naissance</p>
+
+
+Sexe :
+    <input type="radio" name="sexe">
+    value="fille">feminin
+     <input type="radio" name="sexe">
+    value="garçon">masculin
+    
+    <h2>Représentant légal</h2>
+
+<form method="post" action="traitement.php">
+    <p>
+      <label for="civilite">Civilité : </label>
+      <select name="civilite">
+          <option value="Madame">Madame</option>
+          <option value="Mademoiselle">Mademoiselle</option>
+          <option value="Monsieur">Monsieur</option>
+      </select>
+    </p>
+    <p>
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" placeholder="Ex : nom" size="30" maxlength="10" />
+  </p>
+  <p>
+        <label for="prénom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
+  </p>
+
+  <p>
+        <label for="numero">Prénom :</label>  
+        <input type="text" name="tuteur_adresse_numero" id="tuteur_adresse_numero" placeholder= size="4" maxlength="4" />
+        <select id="tuteur_adresse_libelle_bis" size="1" name="tuteur_adresse_libelle_bis">
+          <option value="" selected="selected"></option>
+          <option value="B">Bis</option>    
+          <option value="C">Ter</option>
+          <option value="D">Quater</option>
+          <option value="B">Cinque</option>
+        </select>
+  </p>
+
+
+
+
+
+
+
+
+
+  <p>
+        <label for="compadresse">Complément d'adresse :</label>
+        <input type="text" name="compadresse" id="compadresse" placeholder="Ex : Complément d'adresse" size="30" maxlength="10" />
+  </p><p>
+        <label for="prénom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
+  </p>
+  <p>
+        <label for="naissance">Date de naissance :</label>
+        <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
+  </p>
+<input type="submit" value="Valider">
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+  
+{% endblock %}
