@@ -1,6 +1,11 @@
-{% extends "SimplonVBusBundle::base.html.twig" %}
+{% extends "::base.html.twig" %}
 
-{% block body -%}
+{% block title %}
+    NOUVELLE DEMANDE
+{% endblock %}
+
+
+{% block content %}
     <h1>NOUVELLE DEMANDE ANNEE SCOLAIRE 2014-2015</h1>
 
     <h2>Elève</h2>
@@ -11,12 +16,9 @@
 
     Sexe :
     <input type="radio" name="sexe">
-    <?php id (isset($gender) && $gender=="fille") echo "checked";?>
     value="fille">feminin
     <input type="radio" name="sexe">
-    <?php id (isset($gender) && $gender=="garçon") echo "checked";?>
     value="garçon">masculin
-
     <h2>Représentant légal</h2>
 
     <form method="post" action="traitement.php">
@@ -47,24 +49,22 @@
                 <option value="D">Quater</option>
                 <option value="B">Cinque</option>
             </select>
-
         </p>
-    </form>
 
-    <p>
-         <label for="compadresse">Complément d'adresse :</label>
-         <input type="text" name="compadresse" id="compadresse" placeholder="Ex : Complément d'adresse" size="30" maxlength="10" />
-    </p>
-    <p>
-         <label for="prénom">Prénom :</label>
-         <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
-    </p>
-    <p>
-         <label for="naissance">Date de naissance :</label>
-         <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
-    </p>
-         <input type="submit" value="Valider">
-         <button type="submit" class="btn btn-default">Submit</button>
+
+        <p>
+            <label for="compadresse">Complément d'adresse :</label>
+            <input type="text" name="compadresse" id="compadresse" placeholder="Ex : Complément d'adresse" size="30" maxlength="10" />
+        </p><p>
+            <label for="prénom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
+        </p>
+        <p>
+            <label for="naissance">Date de naissance :</label>
+            <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
+        </p>
+        <input type="submit" value="Valider">
+        <button type="submit" class="btn btn-default">Submit</button>
     </form>
 
 
