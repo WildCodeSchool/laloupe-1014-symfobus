@@ -1,0 +1,30 @@
+user:
+    path:     /
+    defaults: { _controller: "SimplonVBusBundle:User:index" }
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "SimplonVBusBundle:User:show" }
+
+user_new:
+    path:     /new
+    defaults: { _controller: "SimplonVBusBundle:User:new" }
+
+user_create:
+    path:     /create
+    defaults: { _controller: "SimplonVBusBundle:User:create" }
+    requirements: { _method: post }
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SimplonVBusBundle:User:edit" }
+
+user_update:
+    path:     /{id}/update
+    defaults: { _controller: "SimplonVBusBundle:User:update" }
+    requirements: { _method: post|put }
+
+user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SimplonVBusBundle:User:delete" }
+    requirements: { _method: post|delete }

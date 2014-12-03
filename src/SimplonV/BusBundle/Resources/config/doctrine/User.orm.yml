@@ -1,0 +1,36 @@
+SimplonV\BusBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: SimplonV\BusBundle\Entity\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        adresse:
+            type: string
+            length: 255
+        telfix:
+            type: string
+            length: 255
+        telpro:
+            type: string
+            length: 255
+        telmoblie:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
