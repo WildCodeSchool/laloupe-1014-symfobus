@@ -5,67 +5,78 @@
 {% endblock %}
 
 
-{% block content %}
+{% block body -%}
     <h1>NOUVELLE DEMANDE ANNEE SCOLAIRE 2014-2015</h1>
 
     <h2>Elève</h2>
     <p>Nom lien PHP appelant le Nom</p>
     <p>Nom lien PHP appelant le Prénom</p>
     <p>Nom lien PHP appelant la date de naissance</p>
+    <p>Nom lien PHP appelant la classe</p>
 
 
     Sexe :
-    <input type="radio" name="sexe">
-    value="fille">feminin
-    <input type="radio" name="sexe">
-    value="garçon">masculin
+    <input type="radio" name="sexe" value="fille"> féminin
+    <input type="radio" name="sexe" value="garçon"> masculin
     <h2>Représentant légal</h2>
 
     <form method="post" action="traitement.php">
-        <p>
+        
             <label for="civilite">Civilité : </label>
             <select name="civilite">
                 <option value="Madame">Madame</option>
                 <option value="Mademoiselle">Mademoiselle</option>
                 <option value="Monsieur">Monsieur</option>
-            </select>
-        </p>
-        <p>
+            </select></br>
+        
             <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom" placeholder="Ex : nom" size="30" maxlength="10" />
-        </p>
-        <p>
+            <input type="text" name="nom" id="nom" size="30" maxlength="10" /></br>
+       
+       
             <label for="prénom">Prénom :</label>
-            <input type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
-        </p>
-
-        <p>
-            <label for="numero">Prénom :</label>
-            <input type="text" name="tuteur_adresse_numero" id="tuteur_adresse_numero" placeholder= size="4" maxlength="4" />
-            <select id="tuteur_adresse_libelle_bis" size="1" name="tuteur_adresse_libelle_bis">
-                <option value="" selected="selected"></option>
-                <option value="B">Bis</option>
-                <option value="C">Ter</option>
-                <option value="D">Quater</option>
-                <option value="B">Cinque</option>
-            </select>
-        </p>
-
-
-        <p>
+            <input type="text" name="prenom" id="prenom" size="30" maxlength="10" /></br>
+        
+        
+        
+            <label for="numero">Adresse :</label>
+            <input type="text" name="tuteur_adresse_numero" id="tuteur_adresse_numero" size="30" maxlength="4" /></br>
+        
             <label for="compadresse">Complément d'adresse :</label>
-            <input type="text" name="compadresse" id="compadresse" placeholder="Ex : Complément d'adresse" size="30" maxlength="10" />
-        </p><p>
-            <label for="prénom">Prénom :</label>
-            <input/>v type="text" name="prenom" id="prenom" placeholder="Ex : Prénom" size="30" maxlength="10" />
-        </p>
-        <p>
-            <label for="naissance">Date de naissance :</label>
-            <input type="date" name="naissance" id="naissance" size="30" maxlength="10" />
-        </p>
-        <input type="submit" value="Valider">
-        <button type="submit" class="btn btn-default">Submit</button>
+            <input type="text" name="compadresse" id="compadresse" size="30" maxlength="10" /></br>
+        
+            <label for="compadresse">Code postal :</label>
+            <input type="#" name="compadresse" id="compadresse" size="30" maxlength="10" /></br>
+
+            <label for="compadresse">Ville :</label>
+            <input type="text" name="ville" id="compadresse" size="30" maxlength="10" /></br>
+        
+            <label for="tel">Tel Fixe :</label>
+            <input type="tel" name="tel" id="tel" size="30" maxlength="10" /></br>
+
+            <label for="tel">Tel Portable :</label>
+            <input type="tel" name="tel" id="tel" size="30" maxlength="10" /></br>
+
+            <label for="tel">Tel Professionnelle :</label>
+            <input type="tel" name="tel" id="tel" size="30" maxlength="10" /></br>
+
+            <label for="Email">Email :</label>
+            <input type="Email" name="Email" id="Email" size="30" maxlength="10" /></br>
+        
+        
+    <label for='circuit'><h2>Sélectionnez votre circuit</h2></label>
+<select>
+    <option value='Belhomert/St Maurice/St Germain'>
+    Belhomert/St Maurice/St Germain
+    </option>
+    <option value='Rpi Champrond/Montireau/Montlandon/St Victor'>
+    Rpi Champrond/Montireau/Montlandon/St Victor
+    </option>
+    
+</select>
+    <input type="submit" value="Valider">
     </form>
+
+
 
 
 {% endblock %}
