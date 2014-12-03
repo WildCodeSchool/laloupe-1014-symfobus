@@ -1,3 +1,7 @@
+simplon_v_bus_user:
+    resource: "@SimplonVBusBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
 simplon_v_bus_busstop:
     resource: "@SimplonVBusBundle/Resources/config/routing/busstop.yml"
     prefix:   /busstop
