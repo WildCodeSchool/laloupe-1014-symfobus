@@ -1,4 +1,6 @@
 services:
-#    simplon_v_bus.example:
-#        class: SimplonV\BusBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+  simplonv.bus.admin.category:
+    class: SimplonV\BusBundle\Admin\BusStopAdmin
+    tags:
+        - { name: sonata.admin, manager_type: orm, group: bus, label: busstop }
+    arguments: [null, SimplonV\BusBundle\Entity\BusStop, SimplonVBusBundle:BusStopAdmin]

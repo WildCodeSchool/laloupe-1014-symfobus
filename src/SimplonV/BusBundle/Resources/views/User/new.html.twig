@@ -4,92 +4,25 @@
     <h1>Inscription</h1>
 
     <div class="well">
+        {{ form_enctype(form) }}
         {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 
         {{ form_errors(form) }}
         <div class="form-group">
 
-            {{ form_label(form.nom, "Nom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.nom) }}
-            <div class="col-sm-4">
-
-                {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.prenom, "Prenom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.prenom) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
-            </div>
-
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.adresse, "Adresse", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.adresse) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.email, "Adresse email", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+            {{ form_label(form.email, "Adresse Email", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
             {{ form_errors(form.email) }}
             <div class="col-sm-4">
+
                 {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
             </div>
         </div>
 
-        <div class="form-group">
-            {{ form_label(form.password, "Mots de passe", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.password) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.password, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.telfix, "télephone", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.telfix) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.telfix, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.telpro, "Télephone professionnelle", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.telpro) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.telpro, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-        <div class="form-group">
-            {{ form_label(form.telmoblie, "Télephone portable", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
-
-            {{ form_errors(form.telmoblie) }}
-            <div class="col-sm-4">
-                {{ form_widget(form.telmoblie, {'attr': {'class': 'form-control'}}) }}
-            </div>
-        </div>
-
-
-
-
-
 
 
             <div class="col-sm-4">
-                <button type="submit" id="simplonv_busbundle_user_submit" name="simplonv_busbundle_user[submit]">Create</button>
+                <button type="submit">Create</button>
            </div>
     </div>
 
