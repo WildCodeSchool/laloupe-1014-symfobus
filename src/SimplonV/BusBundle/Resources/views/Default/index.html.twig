@@ -1,8 +1,11 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}
+    Page d'accueil
+{% endblock %}
+
 {% block body -%}
 
-    <body class="body">
     <div classe="container">
 
         <div classe="row">
@@ -50,23 +53,26 @@
                 <button type="submit" class="btn btn-default">Envoyer</button>
             </form>
 
-            <form role="form" class="col-md-4" id="connexion">
+
+            <form role="form" class="col-md-4" id="connexion" action="{{ path('connexion') }}" method="post" {{ form_enctype(form) }}>
                 <h4>JE M'IDENTIFIE</h4>
                 <div class="form-group">
                     <label for="lemail">Adresse mail</label>
-                    <input type="email" class="form-control" id="lemail" placeholder="Indiquez votre adresse mail">
+                    {{ form_errors(form.email) }}
+                    {{ form_widget(form.email) }}
                 </div>
 
                 <div class="form-group">
                     <label for="pw">Mot de passe</label>
-                    <input type="password" class="form-control" id="pw" placeholder="Indiquez votre mot de passe">
+                    {{ form_errors(form.password) }}
+                    {{ form_widget(form.password) }}
                 </div>
 
+                {{ form_rest(form) }}
+
                 <button type="submit" class="btn btn-default">Envoyer</button>
-                <h6>Mot de passe / identifiant perdu ou oublié, <a href="#">cliquez ici.</a></h6>
             </form>
         </div>
-    </div>
     </div>
 
 {% endblock %}
