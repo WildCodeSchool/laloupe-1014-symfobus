@@ -1,3 +1,11 @@
 busstop:
     path:     /
     defaults: { _controller: "SimplonVBusBundle:Inscription:index" }
+
+connexion:
+    path: /connexion
+    defaults: { _controller: "SimplonVBusBundle:Default:connexion" }
+
+connexionOK:
+    path: /connexionOk
+    defaults: { _controller: "SimplonVBusBundle:Default:connexionOk" }
