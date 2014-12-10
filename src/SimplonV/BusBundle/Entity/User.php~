@@ -2,13 +2,12 @@
 
 namespace SimplonV\BusBundle\Entity;
 
-use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * User
  */
-class User implements UserInterface
+class User
 {
     /**
      * @var integer
@@ -248,53 +247,5 @@ class User implements UserInterface
     public function getTelmoblie()
     {
         return $this->telmoblie;
-    }
-    /**
-     * @var string
-     */
-    private $username;
-
-
-    /**
-     * Set username
-     *
-     * @param string $username
-     * @return User
-     */
-    public function setUsername($username)
-    {
-        $this->username = $username;
-
-        return $this;
-    }
-
-    /**
-     * Get username
-     *
-     * @return string 
-     */
-    public function getUsername()
-    {
-        return $this->username;
-    }
-
-    public function getRoles()
-    {
-        return array('ROLE_ADMIN');
-    }
-
-    public function getSalt()
-    {
-        return null;
-    }
-
-    public function eraseCredentials()
-    {
-
-    }
-
-    public function equals(UserInterface $user)
-    {
-        return $user->getUsername() == $this->getUsername();
     }
 }

@@ -18,19 +18,31 @@ SimplonV\BusBundle\Entity\User:
         nom:
             type: string
             length: 255
+            nullable: true
         prenom:
             type: string
             length: 255
+            nullable: true
         adresse:
             type: string
             length: 255
+            nullable: true
         telfix:
             type: string
             length: 255
+            nullable: true
         telpro:
             type: string
             length: 255
+            nullable: true
         telmoblie:
             type: string
             length: 255
+            nullable: true
+        username:
+            type: string
+            length: 255
+
     lifecycleCallbacks: {  }
+
+

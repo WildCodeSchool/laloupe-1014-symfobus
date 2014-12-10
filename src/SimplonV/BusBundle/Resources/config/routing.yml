@@ -13,3 +13,16 @@ simplon_v_bus_inscription:
 simplon_v_bus_homepage:
     path:     /
     defaults: { _controller: SimplonVBusBundle:Default:index }
+
+login:
+    pattern:   /login
+    defaults:  { _controller: SimplonVBusBundle:Default:login }
+
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern:   /logout
+
+
+

@@ -12,5 +12,34 @@ use Sonata\AdminBundle\Form\FormMapper;
 
 class BusStopAdmin extends Admin
 {
+    // setup the default sort column and order
+    protected $datagridValues = array(
+        '_sort_order' => 'ASC',
+        '_sort_by' => 'name'
+    );
 
+    protected function configureFormFields(FormMapper $formMapper)
+    {
+        $formMapper
+            ->add('name')
+            ->add('latitude')
+            ->add('longitude')
+        ;
+    }
+
+    protected function configureDatagridFilters(DatagridMapper $datagridMapper)
+    {
+        $datagridMapper
+            ->add('name')
+        ;
+    }
+
+    protected function configureListFields(ListMapper $listMapper)
+    {
+        $listMapper
+            ->addIdentifier('name')
+            ->add('latitude')
+            ->add('longitude')
+        ;
+    }
 }
