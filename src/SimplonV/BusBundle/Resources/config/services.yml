@@ -4,3 +4,9 @@ services:
     tags:
         - { name: sonata.admin, manager_type: orm, group: bus, label: busstop }
     arguments: [null, SimplonV\BusBundle\Entity\BusStop, SimplonVBusBundle:BusStopAdmin]
+
+  simplonv.user.admin.category:
+      class: SimplonV\BusBundle\Admin\UserAdmin
+      tags:
+          - { name: sonata.admin, manager_type: orm, group: user, label: Utilisateur }
+      arguments: [null, SimplonV\BusBundle\Entity\User, SimplonVBusBundle:UserAdmin]

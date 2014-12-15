@@ -46,11 +46,6 @@ class DefaultController extends Controller
         ));
     }
 
-    public function connexionOkAction()
-    {
-        return $this->render('SimplonVBusBundle:Default:connexionOK.html.twig');
-    }
-
     public function loginAction(Request $request)
     {
         $session = $request->getSession();
@@ -68,6 +63,11 @@ class DefaultController extends Controller
             'last_username' => $session->get(SecurityContext::LAST_USERNAME),
             'error' => $error,
         ));
+    }
+
+    public function connexionOkAction()
+    {
+        return $this->render('SimplonVBusBundle:Default:connexionOK.html.twig');
     }
 }
 

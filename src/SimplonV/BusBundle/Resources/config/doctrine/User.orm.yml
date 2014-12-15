@@ -9,6 +9,27 @@ SimplonV\BusBundle\Entity\User:
             generator:
                 strategy: AUTO
     fields:
+        kidnom:
+            type: string
+            length: 255
+        kidprenom:
+            type: string
+            length: 255
+        kiddate:
+            type: string
+            length: 255
+        kidecole:
+            type: string
+            length: 255
+        kidclasse:
+            type: string
+            length: 255
+        kidadresse:
+            type: string
+            length: 255
+        kidcircuit:
+            type: string
+            length: 255
         email:
             type: string
             length: 255

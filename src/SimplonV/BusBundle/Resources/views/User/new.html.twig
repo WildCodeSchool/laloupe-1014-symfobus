@@ -1,13 +1,142 @@
 {% extends '::base.html.twig' %}
-
+{% block title %}INSCRIPTION AUX TRANSPORTS SCOLAIRES{% endblock %}
 {% block body -%}
-    <h1>Inscription</h1>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="/user/new">Inscription</a></li>
+                    <li role="presentation"><a href="/monespace">Espace parent</a></li>
+                    <li role="presentation"><a href="mailto: dudu@do.fr">Contact</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">LOGO HERE</h3>
+        </div>
+    </div>
 
-    <div class="well">
-        {{ form_enctype(form) }}
+    <div class="container">
+        <div class="jumbotron">
+            <h2>INSCRIPTION AUX TRANSPORTS SCOLAIRES</h2>
+            <p class="lead">Vous inscrivez votre ou vos enfants pour la première fois merci de completé les case ci-dessous
+            </p>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h3>Enfant</h3>
+                    {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+                    {{ form_errors(form) }}
+                    {{ form_enctype(form) }}
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidnom, "Nom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidnom) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidnom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidprenom, "Prénom", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidprenom) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidprenom, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kiddate, "Date", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kiddate) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kiddate, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidecole, "Établissement scolaire", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidecole) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidecole, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidclasse, "Classe", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidclasse) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidclasse, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidadresse, "Adresse domicile", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidadresse) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidadresse, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_label(form.kidcircuit, "kidcircuit", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+                    {{ form_errors(form.kidcircuit) }}
+                    <div class="col-sm-4">
+
+                        {{ form_widget(form.kidcircuit, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <h3>Parent</h3>
+
         {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
-
         {{ form_errors(form) }}
+        {{ form_enctype(form) }}
+
+        <div class="form-group">
+
+            {{ form_label(form.username, "Identifiant", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.username) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.password, "Mots de Passe", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.password) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.password, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
         <div class="form-group">
 
             {{ form_label(form.email, "Adresse Email", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -19,14 +148,75 @@
             </div>
         </div>
 
+        <div class="form-group">
 
+            {{ form_label(form.nom, "Nom:", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 
+            {{ form_errors(form.nom) }}
             <div class="col-sm-4">
-                <button type="submit">Create</button>
-           </div>
+
+                {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.prenom, "Prénom:", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.prenom) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.adresse, "Adresse postal", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.adresse) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.telfix, "Téléphone domicile", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.telfix) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.telfix, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.telpro, "Téléphone pro", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.telpro) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.telpro, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="form-group">
+
+            {{ form_label(form.telmoblie, "Téléphone moblie", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+
+            {{ form_errors(form.telmoblie) }}
+            <div class="col-sm-4">
+
+                {{ form_widget(form.telmoblie, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+                {{ form_rest(form) }}
+
     </div>
-
-
+        </div> <!-- /container -->
         <ul class="record_actions">
     <li>
         <a href="{{ path('user') }}">

@@ -18,6 +18,41 @@ class User implements UserInterface
     /**
      * @var string
      */
+    private $kidnom;
+
+    /**
+     * @var string
+     */
+    private $kidprenom;
+
+    /**
+     * @var string
+     */
+    private $kiddate;
+
+    /**
+     * @var string
+     */
+    private $kidecole;
+
+    /**
+     * @var string
+     */
+    private $kidclasse;
+
+    /**
+     * @var string
+     */
+    private $kidadresse;
+
+    /**
+     * @var string
+     */
+    private $kidcircuit;
+
+    /**
+     * @var string
+     */
     private $email;
 
     /**
@@ -249,6 +284,212 @@ class User implements UserInterface
     {
         return $this->telmoblie;
     }
+
+    /**
+     * Set kidnom
+     *
+     * @param string $kidnom
+     * @return User
+     */
+    public function setkidnom($kidnom)
+    {
+        $this->kidnom = $kidnom;
+
+        return $this;
+    }
+
+    /**
+     * Get kidnom
+     *
+     *
+     * @return string
+     */
+    public function getkidnom()
+    {
+        return $this->kidnom;
+    }
+
+    /**
+     * Set kidprenom
+     *
+     * @param string $kidprenom
+     * @return User
+     */
+    public function setkidprenom($kidprenom)
+    {
+        $this->kidnom = $kidprenom;
+
+        return $this;
+    }
+
+    /**
+     * Get kidprenom
+     *
+     *
+     * @return string
+     */
+    public function getkidprenom()
+    {
+        return $this->kidprenom;
+    }
+
+    /**
+     * Set kiddate
+     *
+     * @param string $kiddate
+     * @return User
+     */
+    public function setkiddate($kiddate)
+    {
+        $this->kidnom = $kiddate;
+
+        return $this;
+    }
+
+    /**
+     * Get kiddate
+     *
+     *
+     * @return string
+     */
+    public function getkiddate()
+    {
+        return $this->kiddate;
+    }
+
+    /**
+     * Set kidecole
+     *
+     * @param string $kidecole
+     * @return User
+     */
+    public function setkidecole($kidecole)
+    {
+        $this->kidnom = $kidecole;
+
+        return $this;
+    }
+
+    /**
+     * Get kidecole
+     *
+     *
+     * @return string
+     */
+    public function getkidecole()
+    {
+        return $this->kidecole;
+    }
+
+    /**
+     * Set kidclasse
+     *
+     * @param string $kidclasse
+     * @return User
+     */
+    public function setkidclasse($kidclasse)
+    {
+        $this->kidnom = $kidclasse;
+
+        return $this;
+    }
+
+    /**
+     * Get kidclasse
+     *
+     *
+     * @return string
+     */
+    public function getkidclasse()
+    {
+        return $this->kidclasse;
+    }
+
+    /**
+     * Set kidadresse
+     *
+     * @param string $kidadresse
+     * @return User
+     */
+    public function setkidadresse($kidadresse)
+    {
+        $this->kidnom = $kidadresse;
+
+        return $this;
+    }
+
+    /**
+     * Get kidadresse
+     *
+     *
+     * @return string
+     */
+    public function getkidadresse()
+    {
+        return $this->kidadresse;
+    }
+
+    /**
+     * Set kidcircuit
+     *
+     * @param string $kidcircuit
+     * @return User
+     */
+    public function setkidcircuit($kidcircuit)
+    {
+        $this->kidnom = $kidcircuit;
+
+        return $this;
+    }
+
+    /**
+     * Get kidcircuit
+     *
+     *
+     * @return string
+     */
+    public function getkidcircuit()
+    {
+        return $this->kidcircuit;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * @var string
      */
